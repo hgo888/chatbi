@@ -1,0 +1,56 @@
+# ---------- 密钥与本地配置（不要提交）----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+config.local.*
+
+# ---------- 虚拟环境 ----------
+.venv/
+.venv*/
+venv/
+venv*/
+env/
+ENV/
+
+# ---------- 运行日志（含会话内容与本地路径）----------
+logs/
+*.log
+
+# ---------- IDE / 编辑器（.idea 内含远程服务器地址与部署配置）----------
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# ---------- Python 缓存 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- WorkBuddy ----------
+.workbuddy/
+
+# ---------- 大文件（课件 PDF、数据集压缩包等仅保留本地）----------
+*.pdf
+*.zip
+*.7z
+*.tar.gz
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------- 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini

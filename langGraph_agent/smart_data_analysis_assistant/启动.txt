@@ -1,0 +1,21 @@
+# 先进入脚本所在目录
+cd "<项目目录>\langGraph_agent\smart_data_analysis_assistant"
+
+# 启动
+powershell -ExecutionPolicy Bypass -File start_all.ps1
+
+# 停止
+powershell -ExecutionPolicy Bypass -File stop_all.ps1
+启动 PostgreSQL
+打开 CMD 或 PowerShell，执行：
+
+"C:\Program Files\PostgreSQL\16\bin\pg_ctl.exe" -D "C:\Program Files\PostgreSQL\16\data" start
+参数说明：
+
+-D 后面是数据目录（数据存哪）
+start 是启动
+如果启动成功，会显示类似 server started 的提示。
+
+停止 PostgreSQL
+
+"C:\Program Files\PostgreSQL\16\bin\pg_ctl.exe" -D "C:\Program Files\PostgreSQL\16\data" stop
